@@ -1,0 +1,583 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Common */
+.clear {
+    clear: both;
+}
+
+.text-white {
+    color: #fff !important;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.pull-right {
+    float: right !important;
+}
+
+.btn {
+    margin-top: 15px;
+    font-size: 15px;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: #000;
+    padding: 11px 16px;
+    border: none;
+}
+
+.btn:hover {
+    background-color: #f4c2c2;
+    color: #000;
+    cursor: pointer;
+}
+
+.mt-8 {
+    margin-top: 8px !important;
+}
+
+.mt-16 {
+    margin-top: 16px !important;
+}
+
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-half {
+    width: 50%;
+}
+
+.col-third {
+    width: 33.33333%;
+}
+
+.col-fourth {
+    width: calc(100% / 4); 
+}
+
+.col-full {
+    width: 100%;
+}
+
+/*
+1. Vị trí
+2. Kích thước (width, height)
+3. Màu sắc
+4. Kiểu dáng (kiểu chữ, hình tròn, vuông, ...) 
+ */
+
+/*
+1. Từ ngoài vào trong
+2. Từ trên xuống dưới
+3. Tổng quan đến chi tiết
+*/
+
+#main {
+
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 46px;
+    background-color: #000;
+    z-index: 1;
+}
+
+#nav {
+    display: inline-block;
+}
+
+#nav, .subnav {
+    list-style: none;
+}
+
+#nav > li {
+    display: inline-block;
+}
+
+#nav li {
+    position: relative;
+}
+
+#nav li:hover .subnav {
+    display: block;
+}
+
+#nav > li > a {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#nav li a {
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+    display: block;
+}
+
+#nav > li:hover > a,
+#nav .subnav li:hover a {
+    background-color: #f7bcbc;
+    color: #000;
+}
+
+#nav .subnav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    min-width: 160px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#nav .subnav a {
+    color: #000;
+    padding: 0 12px;
+    line-height: 38px;
+}
+
+#nav .nav-arrow-down {
+    font-size: 12px;
+}
+
+#header .mobile-menu-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+
+#header .mobile-menu-btn,
+#header .search-btn {
+    float: right;
+    padding: 0 21px;
+}
+
+#header .mobile-menu-btn:hover,
+#header .search-btn:hover {
+    background-color: #f7bcbc;
+    cursor: pointer;
+}
+
+#header .mobile-menu-btn:hover .mobile-menu-icon,
+#header .search-btn:hover .search-icon {
+    color: #000;
+}
+
+#header .mobile-menu-icon,
+#header .search-icon {
+    line-height: 46px;
+    color: #fff;
+    font-size: 20px;
+}
+
+/* 50% tỉ lệ với chiều ngang của chính nó  */
+#slider {
+    position: relative;
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url('/assets/img/slider/slider1.jpg') top center / cover no-repeat;
+}
+
+#icon {
+    cursor: pointer;
+}
+
+#my-song {
+    display: none;
+}
+
+@keyframes spinLogo {
+0% {
+    transform: rotate(0);
+}
+12.5% {
+    transform: rotate(45deg);
+}
+25% {
+    transform: rotate(90deg);
+}
+37.5% {
+    transform: rotate(135deg);
+}
+50% {
+    transform: rotate(180deg);
+}
+62.5% {
+    transform: rotate(225deg);
+}
+75% {
+    transform: rotate(270deg);
+}
+87.5% {
+    transform: rotate(315deg);
+}
+
+100% {
+    transform: rotate(360deg);
+}
+}
+
+#slider .logo-spin {
+    position: absolute;
+    top: 8px;
+    right: 15px;
+    width: 62px;
+    height: 62px;
+    background-image: url('../img/spin.png');
+    background-size: 100%;
+    animation: spinLogo linear 6s infinite;
+    border-radius: 50%;
+}
+
+#slider .text-content {
+    position: absolute;
+    bottom: 47px;
+    width: 100%; 
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 0 10px #333;
+}
+
+#slider .text-heading {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+#slider .text-description {
+    font-size: 15px;
+    margin-top: 25px;
+}
+
+#content {
+
+}
+
+#content .content-section {
+    padding: 64px 0 112px; 
+    width: 800px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto; 
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+#content .section-heading {
+    font-size: 30px;
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 4px;
+}
+
+#content .section-logan {
+    font-size: 15px;
+    text-align: center;
+    margin-top: 25px;
+    font-style: italic;
+    opacity: 0.6;
+}
+
+#content .about-text {
+    font-size: 15px;
+    text-align: justify;
+    margin-top: 15px;
+    line-height: 1.6;
+}
+
+#content .member-list {
+    margin-top: 32px;
+}
+
+#content .member-name {
+    font-size: 15px;
+}
+
+#content .member-img {
+    width: 160px;
+    border-radius: 4px;
+    margin-top: 15px;
+}   
+
+/* Music section */
+.music-section {
+    background-color: #000;
+}
+
+.album-list {
+    background-color: #fff;
+    list-style: none;
+    margin-top: 40px;
+}
+
+.album-list li {
+    font-size: 15px;
+    padding: 11px 16px;
+    color: #757575;
+    border-bottom: 1px solid #ddd;
+}
+
+.album-list .title-name {
+    color: #fff;
+    background-color: #f44336;
+    margin-left: 16px;
+    padding: 3px 5px;
+}
+
+.album-list .quantity {
+    float: right;
+    width: 24px;
+    height: 24px; 
+    background-color: #000;
+    border-radius: 50%;
+    color: #fff;
+    line-height: 24px;
+    text-align: center;
+    margin-top: -3px;
+}
+
+/* Songs */
+.song-list {
+    margin-top: 16px;
+}
+
+.song-item {
+    float: left;
+    width: 33.33333%;
+    padding: 0 8px;
+}
+
+.song-img {
+    width: 100%;
+    display: block;
+}
+
+.song-img:hover {
+    opacity: 0.6;
+}
+
+.song-body {
+    background-color: #fff;
+    padding: 16px;
+    font-size: 15px;
+}
+
+.song-heading {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.song-time {
+    color: #757575;
+    margin-top: 15px;
+}
+
+.song-desc {
+    margin-top: 15px;
+    line-height: 1.4;
+}
+
+/* Modal */
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    display: none;
+}
+
+.modal.open {
+    display: flex;
+}
+
+.modal-container {
+    background-color: #fff;
+    width: 900px;
+    min-height: 200px;
+    position: relative;
+    max-width: calc(100% - 32px);
+    animation: modalFadeIn ease 0.5s;
+}
+
+.modal-close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 10px;
+    opacity: 0.7;
+}
+
+.modal-close:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.modal-header {
+    background-color: #f4c2c2;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    letter-spacing: 3px;
+}
+
+.modal-bag-icon {
+    margin-right: 16px;
+}
+
+.modal-body {
+    padding: 16px;
+    font-size: 15px;
+}
+
+.modal-label {
+    display: block;
+    margin-bottom: 11px;
+}
+
+.modal-input {
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 11px;
+    font-size: 15px;
+    margin-bottom: 23px;
+}
+
+#buy-album {
+    background-color: #f4c2c2;
+    border: none;
+    width: 100%; 
+    padding: 17px;
+    font-size: 15px;
+}
+
+#buy-album:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.modal-footer {
+    padding: 16px;
+    text-align: right;
+    font-size: 15px;
+}
+
+.modal-footer a {
+    color: #2196f3;
+}
+
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-140px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Contact form */
+.contact-content {
+    margin-top: 48px;
+}
+
+.contact-info {
+    font-size: 18px;
+    line-height: 1.5;
+} 
+
+.contact-info a {
+    color: #0202ff;
+    opacity: 1;
+}
+
+.contact-info a:hover {
+    opacity: 0.8;
+}
+
+.contact-info i[class*='ti-'] {
+    width: 30px;
+    display: inline-block;
+}
+
+.contact-form {
+    font-size: 15px;
+}
+
+.contact-form .form-control {
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+/* Map section */
+.map-section img {
+    width: 100%;
+    display: block;
+}
+
+/* Footer section */
+#footer {
+    padding: 64px 16px;
+    text-align: center;
+}
+
+#footer .social-list a {
+    font-size: 24px;
+    text-decoration: none;
+    color: #757575;
+}
+
+#footer .copyright a:hover,
+#footer .social-list a:hover {
+    opacity: 0.7;
+}
+
+#footer .copyright {
+    color: #757575;
+    margin-top: 15px;
+    font-size: 15px;
+}
+
+#footer .copyright a {
+    color: #757575;
+    font-size: 15px;
+}

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Born Pink</title>
+    <link rel="icon" href="https://ephoto360.com/uploads/worigin/2021/08/03/hieu-ung-tao-logo-phong-cach-blackpink-truc-tuyen-_dc2ef.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
+</head>
+<body>
+    <div id="main">
+        <div id="header">
+            <!-- Begin: Nav -->
+            <ul id="nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#music">Music</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li>
+                    <a href="#">
+                        More
+                        <i class="ti-angle-down nav-arrow-down"></i>
+                    </a>
+                    <ul class="subnav">
+                        <li><a href="https://www.instagram.com/roses_are_rosie/">Roseanne Park</a></li>
+                        <li><a href="https://www.instagram.com/jennierubyjane/">Jennie</a></li>
+                        <li><a href="https://www.instagram.com/sooyaaa__/">Jisoo</a></li>
+                        <li><a href="https://www.instagram.com/lalalalisa_m/">Lisa</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- End: Nav -->
+
+            <!-- Search button -->
+            <div id="mobile-menu" class="mobile-menu-btn">
+                <i class="ti-menu mobile-menu-icon"></i>
+            </div>
+
+            <div class="search-btn">
+                <i class="ti-search search-icon"></i>
+            </div>
+            <!-- Search button -->
+        </div>
+
+        <div id="slider">
+            <div class="text-content">
+                <h2 class="text-heading">Born Pink</h2>
+                <div class="text-description">Album Born Pink is coming soon.</div> 
+            </div>
+
+            <div class="logo-spin" id="icon"></div>
+                <audio controls id="my-song">
+                    <source src="./assets/img/shutdown_short.mp4" type="audio/mp4">
+    
+                    <!-- Js để bật tắt nhạc của cái spinner -->
+                    <script>
+                        var mysong = document.getElementById("my-song");
+                        var icon = document.getElementById("icon");
+    
+                        icon.onclick = function() {
+                            if (mysong.paused) {
+                                mysong.play();
+                            } else {
+                                mysong.pause();
+                            }
+                        }
+                    </script>
+                </audio>
+        </div>
+
+        <div id="content">
+            <!-- About section -->
+            <div id="about" class="content-section">
+                <h2 class="section-heading">BLACKPINK</h2>
+                <p class="section-logan">Blackpink in your area</p>
+                <p class="about-text">
+                    Blackpink (tiếng Hàn: 블랙핑크; Romaja: Beullaekpingkeu; thường được viết cách điệu là BLɅϽKPIИK) là một nhóm nhạc nữ Hàn Quốc do công ty YG Entertainment thành lập và quản lý. Nhóm gồm 4 thành viên bao gồm Jisoo, Jennie, Rosé, Lisa. Blackpink chính thức ra mắt với album đĩa đơn đầu tay mang tên Square One gồm hai ca khúc "Boombayah" và "Whistle". Cả hai sau đó đã lọt vào bảng xếp hạng World Digital Songs của Billboard và bảng xếp hạng nhạc số Gaon của Hàn Quốc.
+                </p>
+                <div class="row member-list">
+                    <div class="col col-fourth s-col-full mt-16 text-center">
+                        <p class="member-name s-mt-16">Rosé</p>
+                        <img src="./assets/img/members/rosie.jpg" alt="Rosé" class="member-img">
+                    </div>
+                    <div class="col col-fourth s-col-full mt-16 text-center">
+                        <p class="member-name s-mt-16">Jennie</p>
+                        <img src="./assets/img/members/jennie.jpg" alt="Jennie" class="member-img">
+                    </div>
+                    <div class="col col-fourth s-col-full mt-16 text-center">
+                        <p class="member-name s-mt-16">Jisoo</p>
+                        <img src="./assets/img/members/jisoo.jpg" alt="Jisoo" class="member-img">
+                    </div>
+                    <div class="col col-fourth s-col-full mt-16 text-center">
+                        <p class="member-name s-mt-16">Lisa</p>
+                        <img src="./assets/img/members/lisa.jpg" alt="Lisa" class="member-img">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Music section -->
+            <div id="music" class="music-section">
+                <div class="content-section">
+                    <h2 class="section-heading text-white">BORN PINK</h2>
+                    <p class="section-logan text-white">Order album now!</p>
+    
+                    <!-- Album -->
+                    <ul class="album-list">
+                        <li>Title <span class="title-name">Pink Venom</span></li>
+                        <li>Title <span class="title-name">Shut Down</span></li>
+                        <li>Name <span class="title-name">Born Pink</span> <span class="quantity">8</span></li>
+                    </ul>
+
+                    <!-- Songs -->
+                    <div class="row song-list">
+                        <div class="col col-third mt-16 s-col-full">
+                            <img src="./assets/img/music/pink_venom.jpg" alt="Pink Venom" class="song-img">
+                            <div class="song-body">
+                                <h3 class="song-heading">Pink Venom</h3>
+                                <p class="song-time">Fri 19 August 2022</p>
+                                <p class="song-desc">"Taste that pink venom, taste that pink venom".</p>
+                                <button class="btn s-full-width js-buy-album">Buy Album</button>
+                            </div>
+                        </div>
+                        <div class="col col-third mt-16 s-col-full">
+                            <img src="./assets/img/music/shut_down.jpg" alt="Shut Down" class="song-img">
+                            <div class="song-body">
+                                <h3 class="song-heading">Shut Down</h3>
+                                <p class="song-time">Fri 16 Sep 2022</p>
+                                <p class="song-desc">"When we pull up, you know it's a shutdown".</p>
+                                <button class="btn s-full-width js-buy-album">Buy Album</button>
+                            </div>
+                        </div>
+                        <div class="col col-third mt-16 s-col-full">
+                            <img src="./assets/img/music/album.jpg" alt="Born Pink" class="song-img">
+                            <div class="song-body">
+                                <h3 class="song-heading">Born Pink</h3>
+                                <p class="song-time">Fri 16 Sep 2022</p>
+                                <p class="song-desc">BP is the second studio album by SK girl group Blackpink.</p>
+                                <button class="btn s-full-width js-buy-album">Buy Album</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Begin: Contact section -->
+            <div id="contact" class="content-section">
+                <h2 class="section-heading">CONTACT</h2>
+                <p class="section-logan">Fan? Drop a note!</p>
+
+                <div class="row contact-content">
+                    <div class="col col-half s-col-full contact-info">
+                        <p><i class="ti-location-pin"></i>Seoul, Korea</p>
+                        <p><i class="ti-mobile"></i>Phone: <a href="tel:+00 151515">+00 151515</a></p>
+                        <p><i class="ti-email"></i>Email: <a href="mailto:mail@mail.com">mail@mail.com</a></p>
+                    </div>
+                    <div class="col col-half s-col-full contact-form">
+                        <form action="">
+                            <div class="row">
+                                <div class="col col-half s-col-full s-mt-32">
+                                    <input type="text" name="" placeholder="Name" required class="form-control">
+                                </div>
+                                <div class="col col-half s-col-full s-mt-8">
+                                    <input type="email" name="" placeholder="Email" required class="form-control">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col col-full mt-8">
+                                    <input type="text" name="" placeholder="Message" required class="form-control">
+                                </div>
+                            </div>
+                            <input class="btn mt-16 pull-right s-full-width" type="submit" value="SEND">
+                        </form>
+                    </div>
+                </div>
+            </div>
+             <!-- Begin: Contact section -->
+             <div class="map-section">
+                <img src="./assets/img/map.jpg" alt="Map">
+             </div>
+        </div>
+
+        <div id="footer">
+            <div class="social-list">
+                <a href="https://www.youtube.com/@BLACKPINK" class="ti-youtube"><i></i></a>
+                <a href="https://www.instagram.com/blackpinkofficial/" class="ti-instagram"><i></i></a>
+                <a href="https://www.facebook.com/BLACKPINKOFFICIAL/" class="ti-facebook"><i></i></a>
+                <a href="https://twitter.com/BLACKPINK?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="ti-twitter"><i></i></a>
+                <a href="https://www.instagram.com/blackpinkofficial/" class="ti-pinterest"><i></i></a>
+            </div>
+
+            <p class="copyright">Powered by <a href="">Hear</a></p>
+        </div>
+    </div>
+
+    <div class="modal js-modal">
+        <div class="modal-container js-modal-container">
+            <div class="modal-close js-modal-close">
+                <i class="ti-close"></i>
+            </div>
+
+            <header class="modal-header">
+                <i class="ti-bag modal-bag-icon"></i>
+                Album
+            </header>
+
+            <div class="modal-body">
+                <label for="quantity" class="modal-label">
+                    <i class="ti-shopping-cart"></i>
+                    Album, $20 per album
+                </label>
+                <input id="quantity" type="text" class="modal-input" placeholder="How many?">
+
+                <label for="email" class="modal-label">
+                    <i class="ti-user"></i>
+                    Send To
+                </label>
+                <input id="email" type="email" class="modal-input" placeholder="Enter email...">
+
+                <button id="buy-album">
+                    PAY <i class="ti-check"></i>
+                </button>
+            </div>
+
+            <footer class="modal-footer">
+                <p class="modal-help">Need <a href="">help?</a></p>
+            </footer>
+        </div>
+    </div>
+
+    <script>
+        const buyBtns = document.querySelectorAll('.js-buy-album'); 
+        const modal = document.querySelector('.js-modal');
+        const modalContainer = document.querySelector('.js-modal-container'); 
+        const modalClose = document.querySelector('.js-modal-close');
+
+        // Hàm hiển thị modal mua album (thêm class open vào modal)
+        function showBuyAlbum() {
+            modal.classList.add('open');
+        }
+
+        // Hàm ẩn modal mua album (gỡ bỏ class open của modal)
+        function hideBuyAlbum() {
+            modal.classList.remove('open');
+        }
+
+        // Lặp qua từng thẻ button và nghe hành vi click
+        for (const buyBtn of buyBtns) {
+            buyBtn.addEventListener('click', showBuyAlbum);
+        }
+
+        // Nghe hành vi click vào button close
+        modal.addEventListener('click', hideBuyAlbum);
+
+        modalClose.addEventListener('click', hideBuyAlbum);
+
+        modalContainer.addEventListener('click', function(event) {
+            event.stopPropagation(); 
+        });
+    </script>
+
+    <script>
+        var header = document.getElementById('header');
+        var mobileMenu = document.getElementById('mobile-menu');
+        var headerHeight = header.clientHeight;
+
+        // Đóng/ mở mobile menu
+        mobileMenu.onclick = function() {
+            var isClosed = header.clientHeight === headerHeight; 
+            if (isClosed) {
+                header.style.height = 'auto';
+            } else {
+                header.style.height = null;
+            }
+        }
+
+        // Tự động đóng khi chọn menu
+        var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
+
+        for (var i = 0; i < menuItems.length; i++) {
+            var menuItem = menuItems[i];
+
+            menuItem.onclick = function(event) {
+                var isBrotherMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('subnav');
+                if (isBrotherMenu) {
+                    event.preventDefault();
+                } else {
+                    header.style.height = null;
+                }
+            }
+        }
+    </script>
+</body>
+</html>
